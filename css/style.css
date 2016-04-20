@@ -117,10 +117,14 @@ outline:0 none;
   padding: 70px 0 50px;
 }
 .banner-section .carousel .carousel-inner {
-  top: 128px;
+  top: 80px;
+}
+.banner-section .carousel .item .bounceInLeft img {
+  margin-right: -150px;
+  max-width: none;
+  width: 120%;
 }
 .banner-section .carousel {
-  background-image: url("../images/hellot.png");
   background-position:-170% 15px;
   background-repeat: no-repeat;
   background-size:62% auto;
@@ -953,6 +957,10 @@ outline:0 none;
  .btn.btn-default.btn-submit{
   width:58%;	
  }
+ .banner-section .carousel .item .bounceInLeft img {
+  margin-right: -210px;
+  width: 130%;
+}
  
 	
 }
