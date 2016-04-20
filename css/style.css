@@ -961,6 +961,19 @@ outline:0 none;
   margin-right: -181px;
   width: 130%;
 }
+.banner-section .carousel .carousel-inner {
+  overflow: visible;
+  padding: 0 0 10px;
+  top: 10px;
+}
+.banner-section .carousel .item .bounceInRight {
+  top: 70px;
+}
+.banner-section {
+  background-color: #cabab5;
+  margin: 0 0 100px;
+  padding: 70px 0 0;
+}
  
 	
 }
