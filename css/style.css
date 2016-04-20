@@ -106,7 +106,7 @@ outline:0 none;
   -webkit-transition:0.8s;
   -moz-transition:0.8s;
 }
-.banner-section.animat .carousel .carousel-inner .item img {
+.banner-section .carousel .carousel-inner .item img {
    transform: translateX(0);
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);	
@@ -129,7 +129,7 @@ outline:0 none;
   -webkit-transition:0.8s;
   -moz-transition:0.8s;
 }
-.banner-section.animat .carousel{
+.banner-section .carousel{
     background-position:0% 15px;
  }
 .logo {
@@ -151,20 +151,21 @@ outline:0 none;
   z-index: 22;
 }
 .btn-trigger {
-  background-color: #cabab5;
-    border: 0 none;
-    border-radius: 100%;
-    float: right;
-    height: 40px;
-    padding: 0;
-    text-align: center;
-    width: 40px;
-  
+  background-color:transparent;
+  border: 0 none;
+  border-radius:0;
+  float: right;
+  height: auto;
+  margin-top: 8px;
+  padding: 0;
+  text-align: center;
+  width:auto;  
   transition:0.5s;
   -webkit-transition:0.5s;
   -moz-transition:0.5s;
   -ms-transition:0.5s;
 }
+
 .navigation.sticky {
   background:#cabab5;
   padding: 8px 0;
@@ -178,6 +179,13 @@ outline:0 none;
 }
 .navigation.sticky .btn-trigger {
   margin-top: 3px;
+}
+
+.container.fixed .btn-trigger.sticky {
+  background-color: #cabab5;
+   border-radius: 100%;
+  height: 40px;
+  width: 40px;
 }
 .btn-trigger .icon-bar {
   background: #fff none repeat scroll 0 0;
@@ -246,7 +254,7 @@ outline:0 none;
   height: 120px;
   line-height: normal;
   margin-top: 25px;
-  padding: 8px 15px;
+  padding:10px 15px;
   position:relative;
   white-space: initial;
   width: 120px;
@@ -363,7 +371,8 @@ outline:0 none;
 .our-studio-bottom h2 {
   color: #fff;
   font-family: "MyriadPro-Cond";
-  font-size:72px;
+  font-size: 72px;
+  line-height: 65px;
 }
 .our-studio-bottom h2 i{
  font-family: 'MyriadPro-CondIt';
@@ -438,7 +447,7 @@ outline:0 none;
   line-height:30px;
   margin: -60px auto 0;
   opacity:0;
-  padding: 22px 4px;
+  padding: 25px 4px;
   position: absolute;
   right: 0;
   text-align: center;
@@ -543,7 +552,7 @@ outline:0 none;
   font-size: 45px;
   height: 180px;
   line-height: 40px;
-  margin: 30px 30px 0 0;
+  margin: 85px 30px 0 0;
   padding: 15px 0;
   position:relative;
   text-align: center;
@@ -583,8 +592,9 @@ outline:0 none;
   display: block;
   padding: 40px 0;
 }
- .map-section {
+.map-section {
   padding: 0 0 30px;
+  position: relative;
 }
 .get-in-touch h2{
     color:#525352;
@@ -644,6 +654,7 @@ outline:0 none;
   font-family: "MyriadPro-CondIt";
   font-size: 25px;
   font-weight: normal;
+   padding: 4px 0; 
   vertical-align: top;
   width: 54.66%;
   
@@ -663,8 +674,17 @@ outline:0 none;
   color:#535352;
   font-family: "MyriadPro-Cond";
   font-size:35px;	
-  margin-top: 0;
+  margin-top: -7px;
 }
+.a-adress p a:first-child {
+  color: #58595b;
+}
+.get-in-touch .col-md-6 a:hover{
+    color: #58595b;	
+ }
+.a-adress p a:first-child:hover{
+  color:#cabab5;	
+ }
 .get-in-touch .col-md-6 p {
   font-size: 18px;
   margin:0;
@@ -822,28 +842,44 @@ outline:0 none;
  .total-project + .total-project {
   margin-right: 0;
 }
- 
-/**********************************
-  animation css
- *************************/
- 
-.scrollme{
-  overflow:hidden;
-  perspective:600px;
-}   
- .animateme{
-  transform-origin:center;
-  -webkit-transform-origin:center;
-  -moz-transform-origin:center;
-  -ms-transform-origin:center;
-}
-
-
 
 .every-project.internal-page h2 i {
   font-family: 'MyriadPro-CondIt';
   font-style:normal;	
   text-transform: none;
+}
+
+.navigation.internal-nav {
+  background:none;
+}
+.container.fixed.internal-fix .btn-trigger .icon-bar{
+  background:#cabab5;	
+ }
+.container.fixed .btn-trigger.sticky .icon-bar{
+  background:#fff;	
+ } 
+.map-btn {
+	background:none;
+  border: 2px solid #535352;
+  border-radius: 100%;
+  bottom: 50px;
+  color: #535352;
+  font-family: "MyriadPro-CondIt";
+  font-size: 25px;
+  height: 100px;
+  left: 0;
+  line-height: 24px;
+  margin: auto;
+  padding:0;
+  position: absolute;
+  right: 0;
+  white-space: pre-line;
+  width: 100px;
+}
+.map-btn:hover {
+  background:#ed1c24;
+  border: 2px solid #ed1c24;
+  color:#fff;	
 }
  
  
@@ -911,7 +947,12 @@ outline:0 none;
 .valued-projects h2 {
 	font-size:78px;
  }
- 
+ .banner-section .carousel{
+   background-size:68% auto;	 
+  }
+ .btn.btn-default.btn-submit{
+  width:58%;	
+ }
  
 	
 }
