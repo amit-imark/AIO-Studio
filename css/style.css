@@ -187,6 +187,12 @@ outline:0 none;
   margin: 4px auto;
   width: 20px;
 }
+.banner-section .carousel.slide .carousel-inner .item:after,
+.banner-section .carousel.slide .carousel-inner .item:before{
+  content:'';
+  clear:both;
+  display:table;	
+ }
 .banner-section .carousel.slide .carousel-inner .item {
   opacity: 0;
   -webkit-transition-property: opacity;
