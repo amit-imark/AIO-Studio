@@ -117,10 +117,18 @@ outline:0 none;
   padding: 70px 0 50px;
 }
 .banner-section .carousel .carousel-inner {
-  top: 128px;
+  overflow: visible;
+  top: 54px;
+}
+.banner-section .carousel .item .bounceInRight {
+  top:68px;
+}
+.banner-section .carousel .item .bounceInLeft img {
+  margin-right: -150px;
+  max-width: none;
+  width: 120%;
 }
 .banner-section .carousel {
-  background-image: url("../images/hellot.png");
   background-position:-170% 15px;
   background-repeat: no-repeat;
   background-size:62% auto;
@@ -939,7 +947,7 @@ outline:0 none;
 .effective-designs .row .col-md-4 span.icons07 {
   background-position: -25px -1047px;
 }
-.effective-designs .row .col-md-4 span.icons08 {
+.effective-designs .row .col-md-4 span.icons08 { 
   background-position: -11px -1214px;
 }
 
@@ -953,6 +961,23 @@ outline:0 none;
  .btn.btn-default.btn-submit{
   width:58%;	
  }
+ .banner-section .carousel .item .bounceInLeft img {
+  margin-right: -181px;
+  width: 130%;
+}
+.banner-section .carousel .carousel-inner {
+  overflow: visible;
+  padding: 0 0 10px;
+  top: 10px;
+}
+.banner-section .carousel .item .bounceInRight {
+  top: 70px;
+}
+.banner-section {
+  background-color: #cabab5;
+  margin: 0 0 100px;
+  padding: 70px 0 0;
+}
  
 	
 }
