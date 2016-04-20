@@ -1,5 +1,6 @@
 // JavaScript Document
 
+
 jQuery(document).ready(function(){
  jQuery(window).load(function(){
 	jQuery('.banner-section').addClass('animat'); 
@@ -7,6 +8,7 @@ jQuery(document).ready(function(){
 	 });	
  
  });
+	  
 	  
 	      if (navigator.userAgent.match(/Trident\/7\./)) { // if IE
            jQuery('body').on("mousewheel", function () {
@@ -19,3 +21,6 @@ jQuery(document).ready(function(){
                 window.scrollTo(0, currentScrollPosition - wheelDelta);
             });
         }
+
+///***************Callback function*******************//
+
