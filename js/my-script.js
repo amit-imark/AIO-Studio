@@ -1,7 +1,7 @@
 // JavaScript Document
 
 
-jQuery(document).ready(function(){
+
  jQuery(window).load(function(){
 	jQuery('.banner-section').addClass('animat'); 
 	 
@@ -24,8 +24,7 @@ stickyNav();
 $(window).scroll(function() {
     stickyNav();
 });
- 
- });
+
 	  
 	  
 	      if (navigator.userAgent.match(/Trident\/7\./)) { // if IE
@@ -42,3 +41,14 @@ $(window).scroll(function() {
 
 ///***************Callback function*******************//
 
+jQuery(document).ready(function(){
+   jQuery('.btn-trigger').click(function(){
+	  jQuery('.menu-overlay').slideDown('fast'); 
+	   
+	 });	
+	 jQuery('.btn-close').click(function(){
+	  jQuery('.menu-overlay').slideUp('fast'); 
+	   
+	 });	
+	
+ });

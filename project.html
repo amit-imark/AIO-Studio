@@ -21,18 +21,20 @@
 </head>
 
 <body>
+
 <div class="menu-overlay">
   <div class="container">
      <div class="btn-close"><button type="button"><img src="images/close-btn.png" alt="..." /></button></div>
     <ul>
       <li><a href="#">ABOUT</a></li>
       <li><a href="#">SERVICES</a></li>
-      <li class="active"><a href="work.html">WORK</a></li>
-      <li><a href="project.html">CLIENTS</a></li>
+      <li><a href="work.html">WORK</a></li>
+      <li class="active"><a href="project.html">CLIENTS</a></li>
       <li><a data-toggle="modal" data-target="#myModal" href="#">CONTACT</a></li>
     </ul>
   </div>
 </div>
+
 <div class="container fixed internal-fix">
    <button type="button" class="btn-trigger">
         <span class="icon-bar"></span>
@@ -47,11 +49,133 @@
   </div>
 </div>  <!---navigation Close--->
 
-<div class="every-project internal-page">
+<div class="project-carousel">
+ <div class="container">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <h2><i>hello</i> <br>
+          THIS IS PROJECT NAME</h2>
+     
+     <table class="table table-project">
+        <tr>
+          <td> 
+             <h4>PROJECT TASKS</h4>
+             <p>
+                Logo <br>
+                Stationary <br>
+                Booth <br>
+                Website
+             </p>
+             <h4>year</h4>
+             <p>2016, 2017</p>
+          </td>
+           <td>
+              <h4>DESCRIPTION</h4>
+              <p>The Forge, is the latest entry into the growing gym scene in Kuwait. We came up with name as we felt that it perfectly represents a gym in which clients are "forged" into the better version of themselves. With this name we were able to create a brand that fully embodied the nature of a forge, complete with a logo, branding, stationary, tshirts and additional elements. We also came up with the slogan "Heros are made, not born" which further developed the concept theme.</p>
+           </td>
+           
+         <td>
+           <h4>SHARE PROJECT</h4>
+              <div class="social-icons">
+                 <ul>
+                    <li class="instagram"><a href="#"></a></li>
+                    <li class="behance"><a href="#"></a></li>
+                    <li class="twitter"><a href="#"></a></li>
+                    <li class="facebook"><a href="#"></a></li>
+                 </ul>
+            </div>
+           </td>
+        
+        </tr>
+        
+     </table>     
+    
+    </div> <!---item--->
+    
+    <div class="item">
+      <h2><i>hello</i> <br>
+          THIS IS PROJECT DEMO</h2>
+     
+     <table class="table table-project">
+        <tr>
+          <td> 
+             <h4>PROJECT TASKS</h4>
+             <p>
+                Logo <br>
+                Stationary <br>
+                Booth <br>
+                Website
+             </p>
+             <h4>year</h4>
+             <p>2016, 2017</p>
+          </td>
+           <td>
+              <h4>DESCRIPTION</h4>
+              <p>The Forge, is the latest entry into the growing gym scene in Kuwait. We came up with name as we felt that it perfectly represents a gym in which clients are "forged" into the better version of themselves. With this name we were able to create a brand that fully embodied the nature of a forge, complete with a logo, branding, stationary, tshirts and additional elements. We also came up with the slogan "Heros are made, not born" which further developed the concept theme.</p>
+           </td>
+           
+         <td>
+           <h4>SHARE PROJECT</h4>
+              <div class="social-icons">
+                 <ul>
+                    <li class="instagram"><a href="#"></a></li>
+                    <li class="behance"><a href="#"></a></li>
+                    <li class="twitter"><a href="#"></a></li>
+                    <li class="facebook"><a href="#"></a></li>
+                 </ul>
+            </div>
+           </td>
+        
+        </tr>
+        
+     </table>     
+    
+    </div>
+ 
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+ </div>
+ </div> <!--container close-->
+</div> <!--project carousel-->
+
+<div class="project-gallery">
   <div class="container">
-    <h2 class="wow fadeInUp"><i>hello</i> <br>
-WE LOVE WHAT WE DO <br>
-SO WE DO IT RIGHT</h2> 
+    <div class="gallery-section wow fadeInLeft">
+       <img src="images/Responsive.jpg" alt="..." />
+    </div>
+    <div class="gallery-section wow fadeInRight">
+       <img src="images/Responsive.jpg" alt="..." />
+    </div>
+    <div class="gallery-section wow fadeInLeft">
+       <img src="images/Responsive.jpg" alt="..." />
+    </div>
+    <div class="gallery-section wow fadeInRight">
+       <img src="images/Responsive.jpg" alt="..." />
+    </div>
+    <div class="gallery-section wow fadeInLeft">
+       <img src="images/Responsive.jpg" alt="..." />
+    </div>
+    <div class="gallery-section wow fadeInRight">
+       <img src="images/Responsive.jpg" alt="..." />
+    </div>
+    
+  </div>
+</div> <!--project-gallery-->
+
+<div class="every-project project-view">
+  <div class="container">
+    <h2 class="wow fadeInUp">SEE MORE OF OUR WORK</h2> 
    
     <div class="row">
       <div class="col-xs-6 col-md-4 wow fadeInLeft">
@@ -95,51 +219,7 @@ Project</a>
           
       </div> <!---col-xs-6 col-md-4 Close--->
       
-      <div class="col-xs-6 col-md-4 wow fadeInLeft">
-        <div class="image-div"> 
-          <img src="images/img03.jpg" />
-       <div class="image-div-overlay"> 
-          <a class="btn btn-default btn-more-porject" href="">View<br>
-Project</a>
-         </div>
-        </div>  
-          <h3>SAFFRON</h3>
-          
-          <p>Logo, Branding, Packaging</p>
-          
-      </div> <!---col-xs-6 col-md-4 Close--->
-       <div class="col-xs-6 col-md-4 wow fadeInUp">
-          <div class="image-div">
-            <img src="images/img04.jpg" />
-          <div class="image-div-overlay">  
-            <a class="btn btn-default btn-more-porject" href="">View<br>
-Project</a>
-             </div>    
-          </div> 
-          <h3>ALOTHMAN BRIDAL</h3>
-          
-          <p>Wedding Packaging, Stationary</p>
-          
-      </div> <!---col-xs-6 col-md-4 Close--->
-       <div class="col-xs-6 col-md-4 wow fadeInRight">
-         <div class="image-div">
-          <img src="images/img05.jpg" />
-          <div class="image-div-overlay"> 
-           <a class="btn btn-default btn-more-porject" href="">View<br>
-Project</a>
-            </div>
-         </div>  
-          <h3>MUZE HAND MADE SOAPS CO.</h3>
-          
-          <p>Logo, Branding, Packaging</p>
-         
-      </div> <!---col-xs-6 col-md-4 Close--->
-      
     </div> <!--row-->
-    
-    <a href="#" class="btn btn-default btn-we-do wow flipInX">View<br>
-More <br>
-Projects</a>
 
   </div> 
 </div> <!----EVERY PROJECT---->
