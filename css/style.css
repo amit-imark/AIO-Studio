@@ -87,34 +87,30 @@ outline:0 none;
 
 .navigation {
   background-color:#cabab5;
-  padding: 20px 0;
+  padding: 50px 0 20px;
   
   /*transition:0.5s;
   -webkit-transition:0.5s;
   -moz-transition:0.5s;
   -ms-transition:0.5s;*/
 }
-.banner-section .carousel .carousel-inner .item img {
+.banner-section .carousel .carousel-inner .item .bench-area img {
   float: right;
   width: 510px;
    
-  transform: translateX(1000px);
-  -webkit-transform: translateX(1000px);
-  -moz-transform: translateX(1000px);
-  
    transition:0.8s;
   -webkit-transition:0.8s;
   -moz-transition:0.8s;
 }
-.banner-section .carousel .carousel-inner .item img {
-   transform: translateX(0);
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);	
- }
+.banner-section .carousel .carousel-inner .item .bench-area img {
+  transform: translateY(70px);
+  -webkit-transform: translateY(70px);
+  -moz-transform: translateY(70px);
+}
 .banner-section {
   background-color: #cabab5;
   margin: 0 0 100px;
-  padding: 70px 0 50px;
+  padding: 90px 0 50px;
 }
 .banner-section .carousel .carousel-inner {
   overflow: visible;
@@ -123,13 +119,13 @@ outline:0 none;
 .banner-section .carousel .item .bounceInRight {
   top:68px;
 }
-.banner-section .carousel .item .bounceInLeft img {
+.banner-section .carousel .item .hello-text img {
   margin-right: -150px;
   max-width: none;
-  width: 120%;
+  width: 130%;
 }
 .banner-section .carousel {
-  background-position:-170% 15px;
+  background-position:0 15px;
   background-repeat: no-repeat;
   background-size:62% auto;
   
@@ -137,9 +133,6 @@ outline:0 none;
   -webkit-transition:0.8s;
   -moz-transition:0.8s;
 }
-.banner-section .carousel{
-    background-position:0% 15px;
- }
 .logo {
   float: left;
   position:relative;
@@ -155,7 +148,7 @@ outline:0 none;
   left: 0;
   position: fixed;
   right: 0;
-  top: 22px;
+  top: 60px;
   z-index: 22;
 }
 .btn-trigger {
@@ -163,11 +156,10 @@ outline:0 none;
   border: 0 none;
   border-radius:0;
   float: right;
-  height: auto;
-  margin-top: 8px;
+  height: 25px;
   padding: 0;
   text-align: center;
-  width:auto;  
+  width:30px;  
   transition:0.5s;
   -webkit-transition:0.5s;
   -moz-transition:0.5s;
@@ -191,17 +183,21 @@ outline:0 none;
 
 .container.fixed .btn-trigger.sticky {
   background-color: #cabab5;
-   border-radius: 100%;
-  height: 40px;
-  width: 40px;
+  border-radius: 100%;
+  height: 50px;
+  padding-top: 4px;
+  width: 50px;
 }
 .btn-trigger .icon-bar {
-  background: #fff none repeat scroll 0 0;
-  border-radius: 4px;
+  background: #fff;
+  border-radius: 0;
   display: block;
-  height: 2px;
-  margin: 4px auto;
-  width: 20px;
+  height: 4px;
+  margin: 5px auto;
+  width: 28px;
+}
+.btn-trigger .icon-bar:first-child {
+  margin-top: 0;
 }
 .banner-section .carousel.slide .carousel-inner .item:after,
 .banner-section .carousel.slide .carousel-inner .item:before{
@@ -243,14 +239,16 @@ outline:0 none;
   color: #535352;
   font-family: "MyriadPro-Cond";
   font-size: 68px;
+  line-height: 58px;
   margin-bottom: 40px;
   text-transform: uppercase;
-} 
-.studio.based p{
- color:#535352;
- font-family: 'MyriadPro-Cond';	
- font-size:25px;	
- } 
+}
+.studio.based p {
+  color: #535352;
+  font-family: "MyriadPro-Cond";
+  font-size: 25px;
+  line-height: 28px;
+}
 .btn.btn-default.btn-we-do {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border: 3px solid #ed1c24;
@@ -258,14 +256,14 @@ outline:0 none;
   color: #ed1c24;
   display: inline-block;
   font-family: "MyriadPro-CondIt";
-  font-size: 25px;
-  height: 120px;
-  line-height: normal;
+  font-size: 30px;
+  height: 140px;
+  line-height:30px;
   margin-top: 25px;
-  padding:10px 15px;
+  padding:24px 15px;
   position:relative;
   white-space: initial;
-  width: 120px;
+  width: 140px;
 }
 .our-studio::after, .our-studio::before {
   clear: both;
@@ -280,53 +278,64 @@ outline:0 none;
 .effective-designs h2 {
   color: #fff;
   font-family: "MyriadPro-Cond";
-  font-size: 60px;
+  font-size: 68px;
+  line-height: 62px;
   text-align: center;
   text-transform: uppercase;
+}
+.banner-section .carousel .item .hello-text {
+  top: -50px;
 }
  
 .cont-text {
   float: right;
   padding: 16px 0;
-  width: 65%;
+  width:160px;
 }
 .effective-designs .row .col-md-4 span {
   background-image: url("../images/sprite.png");
   background-position: center 0;
   background-repeat: no-repeat;
-  background-size: 135% auto;
+  background-size: 100% auto;
   display: inline-block;
-  height: 120px;
+  height: 135px;
   vertical-align: middle;
-  width: 32.33%;
+  width: 180px;
 }
 .effective-designs .row .col-md-4 span.icons00 {
-  background-position: -10px 0;
+  background-position: 8px 0;
 }
 .effective-designs .row .col-md-4 span.icons01 {
-  background-position: -18px -151px;
-} 
+  background-position: 5px -196px;
+  background-size: 106% auto;
+}
 .effective-designs .row .col-md-4 span.icons02 {
-  background-position: -11px -1072px;
-  background-size: 115% auto;
+  background-position: -11px -1682px;
+  background-size: 114% auto;
 }
 .effective-designs .row .col-md-4 span.icons03 {
-  background-position: -20px -315px;
+  background-position: 0 -417px;
+  background-size: 111% auto;
 }
 .effective-designs .row .col-md-4 span.icons04 {
-  background-position: -24px -482px;
+  background-position: -3px -658px;
+  background-size: 115% auto;
 }
 .effective-designs .row .col-md-4 span.icons05 {
-  background-position: -24px -652px;
+  background-position: -8px -922px;
+  background-size: 120% auto;
 }
 .effective-designs .row .col-md-4 span.icons06 {
-  background-position: -24px -822px;
+  background-position: -7px -1099px;
+  background-size: 115% auto;
 }
 .effective-designs .row .col-md-4 span.icons07 {
-  background-position: -24px -966px;
+  background-position: 11px -1112px;
+  background-size: 100% auto;
 }
 .effective-designs .row .col-md-4 span.icons08 {
-  background-position: -24px -1127px;
+  background-position: -3px -1571px;
+  background-size: 120% auto;
 }
 .studio-banner-top::after, .studio-banner-top::before,
 .our-studio-bottom:after, .our-studio-bottom:before,
@@ -351,7 +360,7 @@ outline:0 none;
   line-height: normal;
 }
 .effective-designs .row .col-md-4 {
-  margin-top: 50px;
+  margin-top: 40px;
 } 
 .our-studio img {
   width: 100%;
@@ -380,7 +389,7 @@ outline:0 none;
   color: #fff;
   font-family: "MyriadPro-Cond";
   font-size: 72px;
-  line-height: 65px;
+  line-height: 60px;
 }
 .our-studio-bottom h2 i{
  font-family: 'MyriadPro-CondIt';
@@ -452,10 +461,10 @@ outline:0 none;
   font-size:30px;
   height: 120px;
   left: 0;
-  line-height:30px;
+  line-height:25px;
   margin: -60px auto 0;
   opacity:0;
-  padding: 25px 4px;
+  padding: 30px 4px;
   position: absolute;
   right: 0;
   text-align: center;
@@ -466,7 +475,7 @@ outline:0 none;
   -webkit-transition:0.5s;
   -moz-transition:0.5s;
 }
-.every-project .row .col-md-4 .btn.btn-default.btn-more-porject::before {
+/*.every-project .row .col-md-4 .btn.btn-default.btn-more-porject::before {
   border:50px solid transparent;
   border-radius: 50%;
   content: "";
@@ -482,7 +491,7 @@ outline:0 none;
 }
 .every-project .row .col-md-4:hover .btn.btn-default.btn-more-porject::before {
   border:0px solid #fff;
-}
+}*/
 .every-project .row .col-md-4:hover .btn.btn-default.btn-more-porject {
   opacity: 1;
 }
@@ -679,10 +688,11 @@ outline:0 none;
 }
 
 .get-in-touch .col-md-6 h4 {
-  color:#535352;
+  color: #535352;
   font-family: "MyriadPro-Cond";
-  font-size:35px;	
-  margin-top: -7px;
+  font-size: 35px;
+  line-height: 30px;
+  margin-top: 0;
 }
 .a-adress p a:first-child {
   color: #58595b;
@@ -694,8 +704,10 @@ outline:0 none;
   color:#cabab5;	
  }
 .get-in-touch .col-md-6 p {
-  font-size: 18px;
-  margin:0;
+  color: #535352;	
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0;
 }
 .get-in-touch .col-md-6 a{
   color:#cabab5;
@@ -900,16 +912,20 @@ outline:0 none;
 .container{
   width:1260px;	 
  }	
-.studio.based h2{
-  font-size:80px;	
- }
-.studio.based p{
- font-size:28px;	
- } 
+.studio.based h2 {
+  font-size: 78px;
+  line-height: 68px;
+  margin-bottom: 30px;
+}
+.studio.based p {
+  font-size: 28px;
+  line-height: 38px;
+}
     
 .effective-designs h2 {
   font-size: 78px;
-} 
+  line-height: 70px;
+}
 .cont-text h3 {
   font-size: 28px;
 }
@@ -920,41 +936,41 @@ outline:0 none;
   height:130px;	
  }
 .effective-designs .row .col-md-4 span.icons00 {
-  background-position: -8px 7px;
+  background-position: 11px 1px;
 }
 .effective-designs .row .col-md-4 span.icons01 {
-  background-position: -16px -164px;
+  background-position: 10px -198px;
 }
 
 .effective-designs .row .col-md-4 span.icons02 {
-  background-position: -8px -1153px;
+  background-position: -2px -1673px;
 }
 .effective-designs .row .col-md-4 span.icons03 {
-  background-position: -10px -338px;
+  background-position: 1px -415px;
 }
 
 .effective-designs .row .col-md-4 span.icons04 {
-  background-position: -22px -518px;
+  background-position: -2px -646px;
 }
 
 .effective-designs .row .col-md-4 span.icons05 {
-  background-position: -14px -699px;
+  background-position: -10px -922px;
 }
 
 .effective-designs .row .col-md-4 span.icons06 {
-  background-position: -15px -884px;
+  background-position: -6px -1090px;
 }
 .effective-designs .row .col-md-4 span.icons07 {
-  background-position: -25px -1047px;
+  background-position: 9px -1107px;
 }
-.effective-designs .row .col-md-4 span.icons08 { 
-  background-position: -11px -1214px;
+.effective-designs .row .col-md-4 span.icons08 {
+  background-position: -11px -1568px;
 }
 
-.our-studio-bottom h2,
-.valued-projects h2 {
-	font-size:78px;
- }
+.our-studio-bottom h2, .valued-projects h2 {
+  font-size: 78px;
+  line-height: 65px;
+}
  .banner-section .carousel{
    background-size:68% auto;	 
   }
@@ -976,7 +992,18 @@ outline:0 none;
 .banner-section {
   background-color: #cabab5;
   margin: 0 0 100px;
-  padding: 70px 0 0;
+  padding: 100px 0 0;
+}
+.banner-section .carousel .carousel-inner .item .bench-area img {
+  width: 560px;
+}
+.banner-section .carousel .carousel-inner .item .bench-area img {
+  transform: translateY(80px);
+  -webkit-transform: translateY(80px);
+  -moz-transform: translateY(80px);
+}
+.cont-text {
+  width: 190px;
 }
  
 	
