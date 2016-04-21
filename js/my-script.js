@@ -41,3 +41,14 @@ $(window).scroll(function() {
 
 ///***************Callback function*******************//
 
+jQuery(document).ready(function(){
+   jQuery('.btn-trigger').click(function(){
+	  jQuery('.menu-overlay').slideDown('fast'); 
+	   
+	 });	
+	 jQuery('.btn-close').click(function(){
+	  jQuery('.menu-overlay').slideUp('fast'); 
+	   
+	 });	
+	
+ });

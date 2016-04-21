@@ -1079,10 +1079,16 @@ outline:0 none;
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 888;
+  z-index: 999;
 }
 .form-overlay .form-section {
+  bottom: 30%;
+  left: 0;
   margin: auto;
+  max-width:95%;
+  position: absolute;
+  right: 0;
+  top:4%;
   width: 552px;
 }
 .form-overlay h2 {
@@ -1090,9 +1096,43 @@ outline:0 none;
   font-family: "MyriadPro-Cond";
   font-size: 68px;
   line-height: 55px;
-  margin: 52px 0 60px;
+  margin: 0px 0 45px;
   text-align: center;
 }
+.modal-backdrop.fade.in {
+  display: none;
+}
+.menu-overlay {
+  background: #ccbdb8;
+  bottom: 0;
+  display:none;
+  left: 0;
+  padding: 20px;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  z-index:888;
+}
+.btn-close {
+  padding: 30px 0;
+  text-align: right;
+}
+.menu-overlay ul li a {
+  color: #fff;
+  display: block;
+  font-family: "MyriadPro-Cond";
+  font-size:68px;
+}
+.menu-overlay ul li:hover a,
+.menu-overlay ul li.active a{
+  background:#ed1c24;	
+ }
+.btn-close button {
+  background:none;
+  border: 0 none;
+  padding: 0;
+} 
 
  
 /******************************************
@@ -1202,6 +1242,11 @@ outline:0 none;
 .cont-text {
   width: 190px;
 }
- 
+.form-overlay .form-section {
+  top:20%;	
+ }
+ .menu-overlay ul li a{
+	  font-size:78px; 
+	 }
 	
 }

@@ -22,6 +22,18 @@
 
 <body>
 
+<div class="menu-overlay">
+  <div class="container">
+     <div class="btn-close"><button type="button"><img src="images/close-btn.png" alt="..." /></button></div>
+    <ul>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">SERVICES</a></li>
+      <li><a href="work.html">WORK</a></li>
+      <li><a href="project.html">CLIENTS</a></li>
+      <li><a data-toggle="modal" data-target="#myModal" href="#">CONTACT</a></li>
+    </ul>
+  </div>
+</div>
 <div class="container fixed">
    <button type="button" class="btn-trigger">
         <span class="icon-bar"></span>
@@ -32,7 +44,7 @@
 
 <div class="navigation">
   <div class="container">
-    <a class="logo" href="#"><img src="images/logo.png" alt="..." /></a>
+    <a class="logo" href="index.html"><img src="images/logo.png" alt="..." /></a>
   </div>
 </div>  <!---navigation Close--->
 
@@ -385,11 +397,10 @@ Kuwait
   </div>
 </div>
 
-<div class="form-overlay">
-      
+<div class="form-overlay modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+     <div class="form-section">
       <h2>HOW ABOUT WE <br>
 GET IN TOUCH</h2>
-     <div class="form-section">
           <input type="text" placeholder="NAME" class="form-control">
           <input type="text" placeholder="EMAIL" class="form-control">
           <input type="text" placeholder="PHONE (OPTIONAL)" class="form-control">
