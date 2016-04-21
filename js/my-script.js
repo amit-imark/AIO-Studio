@@ -1,7 +1,7 @@
 // JavaScript Document
 
 
-jQuery(document).ready(function(){
+
  jQuery(window).load(function(){
 	jQuery('.banner-section').addClass('animat'); 
 	 
@@ -24,8 +24,7 @@ stickyNav();
 $(window).scroll(function() {
     stickyNav();
 });
- 
- });
+
 	  
 	  
 	      if (navigator.userAgent.match(/Trident\/7\./)) { // if IE

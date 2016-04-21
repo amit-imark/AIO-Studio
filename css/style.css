@@ -933,11 +933,167 @@ outline:0 none;
   border:0 solid #ed1c24;
  } 
  
-.every-project.internal-page {
+.every-project.internal-page,
+.every-project.project-view {
   padding: 20px 0 40px;
+}
+.every-project.project-view .row {
+  margin-top: 25px;
+}
+.project-carousel .carousel-control {
+  background:none;
+  width: 70px;
+}
+.table.table-project tr td {
+  border: 0 none;
+}
+.table.table-project tr td:first-child {
+  width: 150px;
+}
+.table.table-project tr td:last-child {
+  width: 300px;
+}
+.table.table-project tr td h4 {
+  color: #535352;
+  font-family: "MyriadPro-BoldCond";
+  font-size: 25px;
+  margin: 0 0 5px;
+}
+.table.table-project tr td p {
+  color: #535352;
+  font-family: "MyriadPro-Cond";
+  font-size: 22px;
+  line-height: 28px;
+}
+.project-carousel .carousel .carousel-inner .item h2 {
+  color: #535352;
+  font-family: "MyriadPro-Cond";
+  font-size: 68px;
+  text-align: center;
+}
+.project-carousel .carousel .carousel-inner .item h2 i{
+  font-family: "MyriadPro-CondIt";
+  font-style:normal;	
+ }
+.table.table-project {
+  border-bottom: 3px solid #cabab5;
+  margin-top: 30px;
+}
+.project-carousel .carousel-control {
+  background:#f5f6f6;
+  bottom: auto;
+  height: 70px;
+  opacity:1;
+  top: 40px;
+  width: 30px;
+}
+.project-carousel::after, .project-carousel::before {
+  clear: both;
+  content: "";
+  display: table;
+}
+.project-carousel {
+  margin-top: 10px;
+}
+.project-carousel .left.carousel-control .glyphicon, .project-carousel .right.carousel-control .glyphicon {
+  height: 100%;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.project-carousel .left.carousel-control .glyphicon::before {
+  background-image:url(../images/left-arrow.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:100%;
+  content: "";
+  height: 100%;
+  left: 0;
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.project-carousel .right.carousel-control .glyphicon::before {
+   background-image:url(../images/right-arrow.png);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:100%;
+  content: "";
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  top:0;
+  right:0;
+  width: 100%;
+}  
+.project-carousel .carousel.slide .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.project-carousel .carousel.slide .carousel-inner .active {
+  opacity: 1;
+}
+.project-carousel .carousel.slide .carousel-inner .active.left,
+.project-carousel .carousel.slide .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.project-carousel .carousel.slide .carousel-inner .next.left,
+.project-carousel .carousel.slide .carousel-inner .prev.right {
+  opacity: 1;
+}
+.project-carousel .carousel.slide .carousel-control {
+  z-index: 2;
+}  
+.project-gallery::after, .project-gallery::before,
+.gallery-section::after, .gallery-section::before {
+  clear: both;
+  content: "";
+  display: table;
+}
+.project-gallery {
+  display: block;
+  padding: 10px 0 0;
+}
+.gallery-section {
+  display: block;
+  margin-top: 30px;
 } 
- 
- 
+
+/****************************
+  form-section
+ ********************/
+.form-overlay {
+  background: #ccbdb8;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 888;
+}
+.form-overlay .form-section {
+  margin: auto;
+  width: 552px;
+}
+.form-overlay h2 {
+  color: #fff;
+  font-family: "MyriadPro-Cond";
+  font-size: 68px;
+  line-height: 55px;
+  margin: 52px 0 60px;
+  text-align: center;
+}
+
  
 /******************************************
   MEDIA QUERY START
@@ -1003,7 +1159,9 @@ outline:0 none;
   background-position: -11px -1568px;
 }
 
-.our-studio-bottom h2, .valued-projects h2 {
+.our-studio-bottom h2, .valued-projects h2,
+.project-carousel .carousel .carousel-inner .item h2,
+.form-overlay h2  {
   font-size: 78px;
   line-height: 65px;
 }
@@ -1030,6 +1188,9 @@ outline:0 none;
   margin: 0 0 100px;
   padding: 100px 0 0;
 }
+.form-overlay .form-section  .btn.btn-default.btn-submit{
+  	width:54.66%;
+ }
 .banner-section .carousel .carousel-inner .item .bench-area img {
   width: 560px;
 }
