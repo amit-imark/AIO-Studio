@@ -6,8 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ALO-STUDIO</title>
 
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+ <link href="css/bootstrap.min.css" rel="stylesheet">
   <link type="image/x-icon" href="images/fav.png" rel="icon">
+  <link rel="stylesheet" href="css/animate.css">
   <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -37,12 +38,12 @@
 
 <div class="every-project internal-page">
   <div class="container">
-    <h2><i>hello</i> <br>
+    <h2 class="wow fadeInUp"><i>hello</i> <br>
 WE LOVE WHAT WE DO <br>
 SO WE DO IT RIGHT</h2> 
    
     <div class="row">
-      <div class="col-xs-6 col-md-4">
+      <div class="col-xs-6 col-md-4 wow fadeInLeft">
         <div class="image-div">
           <img src="images/img00.jpg" />
           <div class="image-div-overlay">
@@ -56,7 +57,7 @@ Project</a>
          
       </div> <!---col-xs-6 col-md-4 Close---> 
       
-       <div class="col-xs-6 col-md-4">
+       <div class="col-xs-6 col-md-4 wow fadeInUp">
          <div class="image-div">
            <img src="images/img01.jpg" />
            <div class="image-div-overlay"> 
@@ -69,7 +70,7 @@ Project</a>
          
       </div> <!---col-xs-6 col-md-4 Close--->
       
-       <div class="col-xs-6 col-md-4">
+       <div class="col-xs-6 col-md-4 wow fadeInRight">
          <div class="image-div">
           <img src="images/img02.jpg" />
          <div class="image-div-overlay"> 
@@ -83,7 +84,7 @@ Project</a>
           
       </div> <!---col-xs-6 col-md-4 Close--->
       
-      <div class="col-xs-6 col-md-4">
+      <div class="col-xs-6 col-md-4 wow fadeInLeft">
         <div class="image-div"> 
           <img src="images/img03.jpg" />
        <div class="image-div-overlay"> 
@@ -96,7 +97,7 @@ Project</a>
           <p>Logo, Branding, Packaging</p>
           
       </div> <!---col-xs-6 col-md-4 Close--->
-       <div class="col-xs-6 col-md-4">
+       <div class="col-xs-6 col-md-4 wow fadeInUp">
           <div class="image-div">
             <img src="images/img04.jpg" />
           <div class="image-div-overlay">  
@@ -109,7 +110,7 @@ Project</a>
           <p>Wedding Packaging, Stationary</p>
           
       </div> <!---col-xs-6 col-md-4 Close--->
-       <div class="col-xs-6 col-md-4">
+       <div class="col-xs-6 col-md-4 wow fadeInRight">
          <div class="image-div">
           <img src="images/img05.jpg" />
           <div class="image-div-overlay"> 
@@ -125,7 +126,7 @@ Project</a>
       
     </div> <!--row-->
     
-    <a href="#" class="btn btn-default btn-we-do">View<br>
+    <a href="#" class="btn btn-default btn-we-do wow flipInX">View<br>
 More <br>
 Projects</a>
 
@@ -162,8 +163,10 @@ Projects</a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.scrollme.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/my-script.js"></script>
-    
+             <script>
+              new WOW().init();
+              </script>
 </body>
 </html>
