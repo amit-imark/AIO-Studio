@@ -250,7 +250,7 @@ outline:0 none;
   line-height: 28px;
 }
 .btn.btn-default.btn-we-do {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  background: none;
   border: 3px solid #ed1c24;
   border-radius: 100%;
   color: #ed1c24;
@@ -264,7 +264,15 @@ outline:0 none;
   position:relative;
   white-space: initial;
   width: 140px;
+  
+    transition:0.6s;
+  -webkit-transition:0.6s;
+  -moz-transition:0.6s;	
 }
+.btn.btn-default.btn-we-do:hover{
+  background:#ed1c24;
+  color:#fff;	
+ }
 .our-studio::after, .our-studio::before {
   clear: both;
   content: "";
@@ -396,18 +404,28 @@ outline:0 none;
  font-style:normal;	
  }
 .btn.btn-default.btn-view {
-  background:none;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border: 3px solid #fff;
   border-radius: 100%;
   color: #fff;
   font-family: "MyriadPro-CondIt";
-  font-size: 30px;
-  height: 120px;
-  position:relative;
-  line-height: normal;
-  padding: 18px 10px;
-  width: 120px;
+  font-size: 34px;
+  height: 140px;
+  line-height: 27px;
+  margin-top: 30px;
+  padding: 40px 10px;
+  position: relative;
+  width: 140px;
+  
+  transition:0.6s;
+  -webkit-transition:0.6s;
+  -moz-transition:0.6s;	
 }
+
+.btn.btn-default.btn-view:hover{
+  background:#ed1c24;
+  border: 3px solid #ed1c24;	
+  } 
 .btn.btn-default.btn-view::before,
 .btn.btn-default.btn-we-do::before{
   border:50px solid transparent;
@@ -438,8 +456,8 @@ outline:0 none;
 .every-project h2 {
   color: #525352;
   font-family: "MyriadPro-Cond";
-  font-size: 72px;
-  line-height: 62px;
+  font-size: 68px;
+  line-height: 55px;
   text-transform: uppercase;
 }
 .every-project .row .col-md-4 img {
@@ -544,9 +562,10 @@ outline:0 none;
   padding: 40px 0;
 }
 .valued-projects h2 {
-  color:#535352;
+  color: #535352;
   font-family: "MyriadPro-Cond";
-  font-size:60px;	
+  font-size: 68px;
+  line-height: 55px;
   text-align: center;
 }
 .valued-projects .row {
@@ -564,42 +583,23 @@ outline:0 none;
   border: 3px solid #535352;
   border-radius: 100%;
   color: #535352;
+  cursor: default;
   display: inline-block;
   font-family: "MyriadPro-CondIt";
   font-size: 45px;
   height: 180px;
   line-height: 40px;
   margin: 85px 30px 0 0;
-  padding: 15px 0;
-  position:relative;
+  padding: 25px 0;
+  position: relative;
   text-align: center;
   width: 180px;
   
-  transition:0.5s;
-  -webkit-transition:0.5s;
-  -moz-transition:0.5s;
 }
 .total-project:hover{
-  border: 3px solid #ed1c24;
-  color:#ed1c24;	
+  color: #535352;	
  }
-.total-project::before {
-  border: 20px solid transparent;
-  border-radius: 100%;
-  bottom: -15px;
-  content: "";
-  left: -15px;
-  position: absolute;
-  right: -15px;
-  top: -15px;
 
-    transition:0.5s;
-  -webkit-transition:0.5s;
-  -moz-transition:0.5s;
- }
-.total-project:hover::before{
- 	border: 0px solid #ed1c24;
- }
 .get-in-touch::after, .get-in-touch::before {
   clear: both;
   content: "";
@@ -613,12 +613,13 @@ outline:0 none;
   padding: 0 0 30px;
   position: relative;
 }
-.get-in-touch h2{
-    color:#525352;
-	font-family: "MyriadPro-Cond";
-	font-size:60px;	
-	text-align:center;	
- }
+.get-in-touch h2 {
+  color: #525352;
+  font-family: "MyriadPro-Cond";
+  font-size: 68px;
+  line-height: 55px;
+  text-align: center;
+}
 .form-section .form-control {
   border: 0 none;
   border-radius: 0;
@@ -671,7 +672,7 @@ outline:0 none;
   font-family: "MyriadPro-CondIt";
   font-size: 25px;
   font-weight: normal;
-   padding: 4px 0; 
+   padding: 5px 0; 
   vertical-align: top;
   width: 54.66%;
   
@@ -680,8 +681,9 @@ outline:0 none;
   -moz-transition:0.5s;
 }
 .btn.btn-default.btn-submit:hover {
-  background-color:transparent;
-  color:#ed1c24;	
+  background-color:#fff;
+  border:1px solid #fff;
+  color:#535352;	
  }
 .get-in-touch .col-md-6 {
   margin-top: 60px;
@@ -738,7 +740,15 @@ outline:0 none;
   position:relative;
   text-align: center;
   width: 60px;
+  
+  transition:0.5s;
+	-webkit-transition:0.5s;
+	-moz-transition:0.5s;
 }
+.social-icons ul li:hover a{
+  background:#cabab5;
+  color:#f5f6f6 !important;		
+ } 
 .social-icons ul li.instagram a:before{
 	content:"";
 	font-family:'FontAwesome';	
@@ -771,7 +781,6 @@ outline:0 none;
  } 
 .social-icons ul li a:hover:after{
 	border:0px solid #cabab5;
-	
 }  
 .b-address, .a-adress {
   display: inline-block;
@@ -807,7 +816,7 @@ outline:0 none;
   width: 30px;
 }
 .social-network ul li:hover a{
-  color:#ed1c24; 	
+  color:#525352; 	
  }
 .social-network ul li.instagram a:before{
 	content:"";
@@ -835,7 +844,7 @@ outline:0 none;
 }
 .footer-inner {
   border-top: 2px solid #cabab5;
-  padding: 20px 0;
+  padding: 20px 0 40px;
 } 
 
 .footer::after, .footer::before {
@@ -879,28 +888,51 @@ outline:0 none;
   background:#fff;	
  } 
 .map-btn {
-	background:none;
-  border: 2px solid #535352;
+  background:none;
+  border: 3px solid #535352;
   border-radius: 100%;
   bottom: 50px;
   color: #535352;
   font-family: "MyriadPro-CondIt";
-  font-size: 25px;
-  height: 100px;
+  font-size: 35px;
+  height: 140px;
   left: 0;
-  line-height: 24px;
+  line-height: 30px;
   margin: auto;
-  padding:0;
+  padding: 24px 0;
   position: absolute;
   right: 0;
-  white-space: pre-line;
-  width: 100px;
+  white-space:normal;
+  width: 140px;
+  text-align:center;
+  
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
 }
 .map-btn:hover {
   background:#ed1c24;
-  border: 2px solid #ed1c24;
+  border: 3px solid #ed1c24;
   color:#fff;	
 }
+.map-btn::before {
+  border: 55px solid transparent;
+  border-radius: 100%;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+   
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+}
+.map-btn:hover::before {
+  border:0 solid #ed1c24;
+ } 
+ 
  
  
 /******************************************
