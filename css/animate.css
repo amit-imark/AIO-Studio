@@ -946,7 +946,7 @@
       -webkit-animation-delay:0.2s; /* Chrome, Safari, Opera */
     animation-delay:0.2s;
 }
- 
+  
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;

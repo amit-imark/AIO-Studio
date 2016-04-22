@@ -8,7 +8,7 @@
 	 });	
 	 
 	 var stickyNavTop = $('.btn-trigger').offset().top;
-  
+   
 var stickyNav = function(){
 var scrollTop = $(window).scrollTop();
       
