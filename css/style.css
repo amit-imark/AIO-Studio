@@ -1214,6 +1214,7 @@ outline:0 none;
  }
 .project-gallery .container {
   width: 1250px;
+  max-width:95%;
 }
  
 /******************************************
@@ -1343,7 +1344,7 @@ outline:0 none;
   margin:0 15px;	
   }
 .project-gallery .container {
-  width: 1350px;
+  width: 1380px;
 } 
 .cont-text h3,
 .every-project .row .col-md-4 h3{
