@@ -46,9 +46,9 @@ jQuery(document).ready(function(){
 	  jQuery('.menu-overlay').slideDown('fast'); 
 	   
 	 });	
-	 jQuery('.btn-close').click(function(){
+	 jQuery('.btn-close, .pop-up').click(function(){
 	  jQuery('.menu-overlay').slideUp('fast'); 
-   
-	 });	
-	 
+    
+	 });
+	 	 
  });
