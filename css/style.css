@@ -364,8 +364,8 @@ outline:0 none;
 .cont-text p {
   color: #fff;
   font-family: "MyriadPro-Cond";
-  font-size: 20px;
-  line-height: normal;
+  font-size: 25px;
+  line-height: 24px;
 }
 .effective-designs .row .col-md-4 {
   margin-top: 40px;
@@ -450,7 +450,7 @@ outline:0 none;
 
 .every-project {
   display: block;
-  padding: 40px 0;
+  padding:80px 0 40px;
   text-align: center;
 }
 .every-project h2 {
@@ -465,10 +465,11 @@ outline:0 none;
   width: 100%;
 }
 .every-project .row .col-md-4 {
-  margin-top: 20px;
+  margin-top: 30px;
+  padding: 0 8px;
 }
 .every-project .row {
-  margin-top: 60px;
+  margin: 50px -8px 0;
 }
 
 .btn.btn-default.btn-more-porject {
@@ -540,7 +541,9 @@ outline:0 none;
   text-transform:uppercase;
 }
 .every-project .row .col-md-4 p {
-  color:#535352;	
+  color: #535352;
+  font-size: 20px;
+  line-height: 16px;
   margin: 0;
 }
 .every-project .btn.btn-default.btn-we-do {
@@ -587,15 +590,14 @@ outline:0 none;
   cursor: default;
   display: inline-block;
   font-family: "MyriadPro-CondIt";
-  font-size: 45px;
-  height: 180px;
-  line-height: 40px;
+  font-size: 60px;
+  height: 220px;
+  line-height: 42px;
   margin: 85px 30px 0 0;
-  padding: 25px 0;
+  padding:40px 0;
   position: relative;
   text-align: center;
-  width: 180px;
-  
+  width: 220px;
 }
 .total-project:hover{
   color: #535352;	
@@ -766,6 +768,14 @@ outline:0 none;
 	content:"";
 	font-family:'FontAwesome';	
  }
+.social-icons ul li.email-icon a::before {
+  content: "";
+  font-family: "FontAwesome";
+} 
+.social-icons ul li.printest a::before {
+  content: "";
+  font-family: "FontAwesome";
+} 
 .social-icons ul li a::after{
    border:28px solid transparent;
    border-radius:100%;
@@ -783,12 +793,18 @@ outline:0 none;
 .social-icons ul li a:hover:after{
 	border:0px solid #cabab5;
 }  
-.b-address, .a-adress {
+.a-adress {
   display: inline-block;
   margin-top: 10px;
   vertical-align: top;
-  width: 49%;
+  width:210px;
 }
+ .b-address{
+  display: inline-block;
+  margin-top: 10px;
+  vertical-align: top;
+  width:50%; 
+	 }
 .a-adress p{
   color:#58595b;
   font-size:18px;	
@@ -934,9 +950,11 @@ outline:0 none;
   border:0 solid #ed1c24;
  } 
  
-.every-project.internal-page,
-.every-project.project-view {
+.every-project.internal-page{
   padding: 20px 0 40px;
+}
+.every-project.project-view {
+  padding: 50px 0 40px;
 }
 .every-project.project-view .row {
   margin-top: 25px;
@@ -964,12 +982,16 @@ outline:0 none;
   color: #535352;
   font-family: "MyriadPro-Cond";
   font-size: 22px;
-  line-height: 28px;
+  line-height: 25px;
+}
+.social-network ul li.facebook a {
+  width: auto;
 }
 .project-carousel .carousel .carousel-inner .item h2 {
   color: #535352;
   font-family: "MyriadPro-Cond";
   font-size: 68px;
+  line-height: 55px;
   text-align: center;
 }
 .project-carousel .carousel .carousel-inner .item h2 i{
@@ -977,8 +999,15 @@ outline:0 none;
   font-style:normal;	
  }
 .table.table-project {
+  margin: 30px 0 0;
+}
+.project-carousel .carousel::after {
   border-bottom: 3px solid #cabab5;
-  margin-top: 30px;
+  content: "";
+  height: 1px;
+  left: -15px;
+  position: absolute;
+  right: -15px;
 }
 .project-carousel .carousel-control {
   background:#f5f6f6;
@@ -1183,7 +1212,9 @@ outline:0 none;
   border:0 none;
   padding:0;	
  }
-
+.project-gallery .container {
+  width: 1250px;
+}
  
 /******************************************
   MEDIA QUERY START
@@ -1212,7 +1243,8 @@ outline:0 none;
   font-size: 28px;
 }
 .cont-text p {
-  font-size: 24px;
+  font-size: 28px;
+  line-height: 26px;
 }
 .effective-designs .row .col-md-4 span{
   height:130px;	
@@ -1250,11 +1282,14 @@ outline:0 none;
 }
 
 .our-studio-bottom h2, .valued-projects h2,
-.project-carousel .carousel .carousel-inner .item h2,
 .form-overlay h2  {
   font-size: 78px;
   line-height: 65px;
 }
+.project-carousel .carousel .carousel-inner .item h2{
+  font-size: 78px;
+  line-height: 60px;	
+ }
  .banner-section .carousel{
    background-size:68% auto;	 
   }
@@ -1307,6 +1342,17 @@ outline:0 none;
 .social-icon-menu > ul li{
   margin:0 15px;	
   }
- 
+.project-gallery .container {
+  width: 1350px;
+} 
+.cont-text h3,
+.every-project .row .col-md-4 h3{
+   font-size:28px;	
+  }
+.every-project .row .col-md-4 p{
+  	font-size:24px;
+ }  
+  
+
 	
-}
+} 

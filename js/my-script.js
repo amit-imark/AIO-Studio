@@ -46,9 +46,31 @@ jQuery(document).ready(function(){
 	  jQuery('.menu-overlay').slideDown('fast'); 
 	   
 	 });	
-	 jQuery('.btn-close, .pop-up').click(function(){
+	 jQuery('.btn-close, .menu-navigation a').click(function(){
 	  jQuery('.menu-overlay').slideUp('fast'); 
     
 	 });
 	 	 
  });
+ 
+ 
+/**************************************parallax********************/
+
+jQuery(function() {
+  jQuery('.menu-navigation a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        jQuery('html, body').animate({
+          scrollTop: target.offset().top
+        }, 2000);
+        return false;
+      }
+    }
+  });
+});
+
+
+
+ 
