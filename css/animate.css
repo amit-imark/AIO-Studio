@@ -1188,6 +1188,8 @@
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
+  -webkit-animation-delay:0.4s; /* Chrome, Safari, Opera */
+    animation-delay:0.4s;
 }
 
 @-webkit-keyframes fadeInUpBig {
