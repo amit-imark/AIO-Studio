@@ -1,14 +1,14 @@
 // JavaScript Document
 
 
-jQuery(document).ready(function(){
+
  jQuery(window).load(function(){
 	jQuery('.banner-section').addClass('animat'); 
 	 
 	 });	
 	 
 	 var stickyNavTop = $('.btn-trigger').offset().top;
- 
+  
 var stickyNav = function(){
 var scrollTop = $(window).scrollTop();
       
@@ -24,8 +24,7 @@ stickyNav();
 $(window).scroll(function() {
     stickyNav();
 });
- 
- });
+
 	  
 	  
 	      if (navigator.userAgent.match(/Trident\/7\./)) { // if IE
@@ -42,3 +41,36 @@ $(window).scroll(function() {
 
 ///***************Callback function*******************//
 
+jQuery(document).ready(function(){
+   jQuery('.btn-trigger').click(function(){
+	  jQuery('.menu-overlay').slideDown('fast'); 
+	   
+	 });	
+	 jQuery('.btn-close, .menu-navigation a').click(function(){
+	  jQuery('.menu-overlay').slideUp('fast'); 
+    
+	 });
+	 	 
+ });
+ 
+ 
+/**************************************parallax********************/
+
+jQuery(function() {
+  jQuery('.menu-navigation a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        jQuery('html, body').animate({
+          scrollTop: target.offset().top
+        }, 2000);
+        return false;
+      }
+    }
+  });
+});
+ 
+
+
+ 

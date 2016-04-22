@@ -915,6 +915,10 @@
   0% {
     opacity: 0;
   }
+  
+  50% {
+    opacity: 0.5;
+  }
 
   100% {
     opacity: 1;
@@ -926,16 +930,23 @@
     opacity: 0;
   }
 
+  50% {
+    opacity: 0.5;
+  }
+
   100% {
     opacity: 1;
   }
+  
 }
 
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+      -webkit-animation-delay:0.2s; /* Chrome, Safari, Opera */
+    animation-delay:0.2s;
 }
-
+ 
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -1149,10 +1160,9 @@
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
+    -webkit-transform: translateY(80px);
+    transform: translateY(80px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -1163,11 +1173,10 @@
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
-    -ms-transform: translateY(20px);
-    transform: translateY(20px);
+    -webkit-transform: translateY(80px);
+    -ms-transform: translateY(80px);
+    transform: translateY(80px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -2598,7 +2607,7 @@
 }
 
 @keyframes hinge {
-  0% {
+  0% { 
     -webkit-transform: rotate(0);
     -ms-transform: rotate(0);
     transform: rotate(0);
