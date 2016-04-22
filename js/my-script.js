@@ -48,7 +48,7 @@ jQuery(document).ready(function(){
 	 });	
 	 jQuery('.btn-close').click(function(){
 	  jQuery('.menu-overlay').slideUp('fast'); 
-	   
+   
 	 });	
 	 
  });

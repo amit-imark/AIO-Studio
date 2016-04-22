@@ -915,6 +915,10 @@
   0% {
     opacity: 0;
   }
+  
+  50% {
+    opacity: 0.5;
+  }
 
   100% {
     opacity: 1;
@@ -926,14 +930,21 @@
     opacity: 0;
   }
 
+  50% {
+    opacity: 0.5;
+  }
+
   100% {
     opacity: 1;
   }
+  
 }
 
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+      -webkit-animation-delay:0.2s; /* Chrome, Safari, Opera */
+    animation-delay:0.2s;
 }
 
 @-webkit-keyframes fadeInDown {

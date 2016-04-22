@@ -387,7 +387,7 @@ outline:0 none;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size:cover;
-  padding:9.55% 0;
+  padding:6% 0;
   text-align:center;
 }
 .effective-designs {
@@ -694,7 +694,7 @@ outline:0 none;
   font-family: "MyriadPro-Cond";
   font-size: 35px;
   line-height: 30px;
-  margin-top: 0;
+  margin: 0 0 18px;
 }
 .a-adress p a:first-child {
   color: #58595b;
@@ -734,12 +734,12 @@ outline:0 none;
   border-radius: 100%;
   color:#cabab5;
   display: block;
-  font-size: 38px !important;
-  height: 60px;
-  line-height: 56px;
+  font-size: 30px !important;
+  height: 55px;
+  line-height: 52px;
   position:relative;
   text-align: center;
-  width: 60px;
+  width: 55px;
   
   transition:0.5s;
 	-webkit-transition:0.5s;
@@ -793,7 +793,7 @@ outline:0 none;
   font-size:18px;	
  }
 .a-adress p a{
-  display:block;	
+  display:inline-block;	
  } 
  
 .social-network {
@@ -844,9 +844,9 @@ outline:0 none;
 }
 .footer-inner {
   border-top: 2px solid #cabab5;
-  padding: 20px 0 40px;
-} 
-
+  margin: 0 -15px;
+  padding: 20px 15px 40px;
+}
 .footer::after, .footer::before {
   clear: both;
   content: "";
@@ -1072,7 +1072,7 @@ outline:0 none;
   form-section
  ********************/
 .form-overlay {
-  background: #ccbdb8;
+  background-color:rgba(202, 186, 181, 0.85);
   bottom: 0;
   left: 0;
   padding: 20px;
@@ -1103,7 +1103,7 @@ outline:0 none;
   display: none;
 }
 .menu-overlay {
-  background: #ccbdb8;
+  background-color:rgba(202, 186, 181, 0.85);
   bottom: 0;
   display:none;
   left: 0;
@@ -1122,7 +1122,7 @@ outline:0 none;
   color: #fff;
   display: block;
   font-family: "MyriadPro-Cond";
-  font-size:68px;
+  font-size:54px;
 }
 .menu-overlay ul li:hover a,
 .menu-overlay ul li.active a{
@@ -1133,6 +1133,55 @@ outline:0 none;
   border: 0 none;
   padding: 0;
 } 
+.social-icon-menu {
+  clear: both;
+  display: block;
+  margin-top: 38px;
+  padding: 10px 0;
+  text-align: center;
+}
+.social-icon-menu > ul li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+.social-icon-menu > ul li a {
+  color: #fff;
+  display: block;
+  font-size: 26px;
+  height: 35px;
+  width: 35px;
+}
+.social-icon-menu > ul li:hover a {
+	background:none;
+  color:#525352;
+}
+.social-icon-menu > ul li.instrgram a::before {
+  content: "";
+  font-family:'FontAwesome';
+}
+.social-icon-menu > ul li.behance a::before {
+  content:"";
+  font-family:'FontAwesome';
+}
+
+.social-icon-menu > ul li.twitter a::before {
+  content: "";
+  font-family:'FontAwesome';
+}
+
+.social-icon-menu > ul li.facebook a::before {
+  content:"";
+  font-family:'FontAwesome';
+}
+.btn-form-close {
+  float: right;
+}
+.btn-form-close button{
+  background-color:transparent;
+  border:0 none;
+  padding:0;	
+ }
 
  
 /******************************************
@@ -1248,5 +1297,15 @@ outline:0 none;
  .menu-overlay ul li a{
 	  font-size:78px; 
 	 }
+	 
+.social-icon-menu > ul li a {
+  font-size:35px;
+  height: 45px;
+  width: 45px;
+}	
+.social-icon-menu > ul li{
+  margin:0 15px;	
+  }
+ 
 	
 }
