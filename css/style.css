@@ -581,7 +581,8 @@ outline:0 none;
 .valued-projects .row .col-md-6 p{
   color:#535352;
   font-family: "MyriadPro-Cond";
-  font-size:24px;	
+  font-size:24px;
+  line-height:26px;	
  } 
 .total-project {
   border: 3px solid #535352;
@@ -854,7 +855,7 @@ outline:0 none;
 .footer-inner p {
   color: #cabab5;
   display: inline-block;
-  font-size: 15px;
+  font-size: 20px;
   margin-bottom: 0;
   margin-left: 20px;
   vertical-align: middle;
@@ -982,7 +983,7 @@ outline:0 none;
   color: #535352;
   font-family: "MyriadPro-Cond";
   font-size: 22px;
-  line-height: 25px;
+  line-height: 24px;
 }
 .social-network ul li.facebook a {
   width: auto;
@@ -1233,7 +1234,7 @@ outline:0 none;
 }
 .studio.based p {
   font-size: 28px;
-  line-height: 33px;
+  line-height: 30px;
 }
     
 .effective-designs h2 {
@@ -1352,7 +1353,11 @@ outline:0 none;
   }
 .every-project .row .col-md-4 p{
   	font-size:24px;
- }  
+ }
+ .valued-projects .row .col-md-6 p {
+  font-size: 28px;
+  line-height: 29px;
+}  
   
 
 	
