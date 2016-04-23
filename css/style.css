@@ -784,7 +784,8 @@ outline:0 none;
 .social-icons ul li.email-icon a::before {
   content: "a";
   font-family: "vector-icon";
-} 
+  line-height: 62px;
+}
 .social-icons ul li.printest a::before {
   content: "";
   font-family: "FontAwesome";
