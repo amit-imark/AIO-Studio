@@ -40,6 +40,18 @@ font-weight:normal;
 font-style:normal
 }
 
+@font-face {
+  font-family: "vector-icon";
+  src:url("../fonts/vector-icon/vector-icon.eot");
+  src:url("../fonts/vector-icon/vector-icon.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/vector-icon/vector-icon.woff") format("woff"),
+    url("../fonts/vector-icon/vector-icon.ttf") format("truetype"),
+    url("../fonts/vector-icon/vector-icon.svg#vector-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 body{
 	background:#f5f6f6;
 	font-family: 'MyriadPro-Regular';
@@ -482,7 +494,7 @@ outline:0 none;
   height: 120px;
   left: 0;
   line-height:25px;
-  margin: -60px auto 0;
+  margin: -40px auto 0;
   opacity:0;
   padding: 30px 4px;
   position: absolute;
@@ -542,8 +554,10 @@ outline:0 none;
 }
 .every-project .row .col-md-4 p {
   color: #535352;
+  font-family: "MyriadPro-Cond";
   font-size: 20px;
-  line-height: 16px;
+  letter-spacing: 0.5px;
+  line-height: 22px;
   margin: 0;
 }
 .every-project .btn.btn-default.btn-we-do {
@@ -770,9 +784,10 @@ outline:0 none;
 	font-family:'FontAwesome';	
  }
 .social-icons ul li.email-icon a::before {
-  content: "";
-  font-family: "FontAwesome";
-} 
+  content: "a";
+  font-family: "vector-icon";
+  line-height: 62px;
+}
 .social-icons ul li.printest a::before {
   content: "";
   font-family: "FontAwesome";
@@ -1103,7 +1118,7 @@ outline:0 none;
   form-section
  ********************/
 .form-overlay {
-  background-color:rgba(202, 186, 181, 0.85);
+  background-color:rgba(202, 186, 181, 0.97);
   bottom: 0;
   left: 0;
   padding: 20px;
@@ -1134,7 +1149,7 @@ outline:0 none;
   display: none;
 }
 .menu-overlay {
-  background-color:rgba(202, 186, 181, 0.85);
+  background-color:rgba(202, 186, 181, 0.97);
   bottom: 0;
   display:none;
   left: 0;
@@ -1155,10 +1170,12 @@ outline:0 none;
   font-family: "MyriadPro-Cond";
   font-size:54px;
 }
-.menu-overlay ul li:hover a,
+/*.menu-overlay ul li:hover a,
 .menu-overlay ul li.active a{
   background:#ed1c24;	
  }
+*/
+
 .btn-close button {
   background:none;  
   border: 0 none;
@@ -1184,7 +1201,7 @@ outline:0 none;
   width: 35px;
 }
 .social-icon-menu > ul li:hover a {
-	background:none;
+  background:none;
   color:#525352;
 }
 .social-icon-menu > ul li.instrgram a::before {
@@ -1340,7 +1357,13 @@ outline:0 none;
   font-size:35px;
   height: 45px;
   width: 45px;
-}	
+}
+.social-icons ul li a {
+  font-size:55px !important;
+  height: 95px;
+  line-height: 90px;
+  width: 95px;
+ }	
 .social-icon-menu > ul li{
   margin:0 15px;	
   }
@@ -1358,6 +1381,10 @@ outline:0 none;
   font-size: 28px;
   line-height: 29px;
 }  
+.btn-form-close {
+    float: right;
+    padding: 36px 0 0;
+}
   
 
 	
