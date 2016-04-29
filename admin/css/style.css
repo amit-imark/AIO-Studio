@@ -1,0 +1,599 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+  font-family: 'MyriadPro-Cond';
+  src: url('../fonts/Myriod/Myproid-Cond/MyriadPro-Cond.eot?#iefix') format('embedded-opentype'),  url('../fonts/Myriod/Myproid-Cond/MyriadPro-Cond.otf')  format('opentype'),
+	     url('../fonts/Myriod/Myproid-Cond/MyriadPro-Cond.woff') format('woff'), url('../fonts/Myriod/Myproid-Cond/MyriadPro-Cond.ttf')  format('truetype'), url('../fonts/Myriod/Myproid-Cond/MyriadPro-Cond.svg#MyriadPro-Cond') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadPro-BoldCond';
+  src: url('../fonts/Myriod/Myproid-bold-Cond/MyriadPro-BoldCond.eot?#iefix') format('embedded-opentype'),  url('../fonts/Myriod/Myproid-bold-Cond/MyriadPro-BoldCond.otf')  format('opentype'),
+	     url('../fonts/Myriod/Myproid-bold-Cond/MyriadPro-BoldCond.woff') format('woff'), url('../fonts/Myriod/Myproid-bold-Cond/MyriadPro-BoldCond.ttf')  format('truetype'), url('../fonts/Myriod/Myproid-bold-Cond/MyriadPro-BoldCond.svg#MyriadPro-BoldCond') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadPro-CondIt';
+  src: url('../fonts/Myriod/MyriadPro-CondIt/MyriadPro-CondIt.eot?#iefix') format('embedded-opentype'),  url('../fonts/Myriod/MyriadPro-CondIt/MyriadPro-CondIt.otf')  format('opentype'),
+	     url('../fonts/Myriod/MyriadPro-CondIt/MyriadPro-CondIt.woff') format('woff'), url('../fonts/Myriod/MyriadPro-CondIt/MyriadPro-CondIt.ttf')  format('truetype'), url('../fonts/Myriod/MyriadPro-CondIt/MyriadPro-CondIt.svg#MyriadPro-CondIt') format('svg');
+  font-weight:normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('../fonts/Myriod/MyriadPro-Regular/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/Myriod/MyriadPro-Regular/MyriadPro-Regular.otf')  format('opentype'),
+	     url('../fonts/Myriod/MyriadPro-Regular/MyriadPro-Regular.woff') format('woff'), url('../fonts/Myriod/MyriadPro-Regular/MyriadPro-Regular.ttf')  format('truetype'), url('../fonts/Myriod/MyriadPro-Regular/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+font-family:'FontAwesome';
+src:url('../fonts/font-awsome/fontawesome-webfont.eot?v=4.6.1');
+src:url('../fonts/font-awsome/fontawesome-webfont.eot?#iefix&v=4.6.1') format('embedded-opentype'), url('../fonts/font-awsome/fontawesome-webfont.woff2?v=4.6.1') format('woff2'), url('../fonts/font-awsome/fontawesome-webfont.woff?v=4.6.1') format('woff'), url('../fonts/font-awsome/fontawesome-webfont.ttf?v=4.6.1') format('truetype'), url('../fonts/font-awsome/fontawesome-webfont.svg?v=4.6.1#fontawesomeregular') format('svg');
+font-weight:normal;
+font-style:normal
+}
+
+@font-face {
+  font-family: "vector-icon";
+  src:url("../fonts/vector-icon/vector-icon.eot");
+  src:url("../fonts/vector-icon/vector-icon.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/vector-icon/vector-icon.woff") format("woff"),
+    url("../fonts/vector-icon/vector-icon.ttf") format("truetype"),
+    url("../fonts/vector-icon/vector-icon.svg#vector-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body{
+	background:#f5f6f6;
+	font-family: "MyriadPro-Cond";
+	margin:0;
+	overflow-x:hidden;
+	padding:0;
+	  -webkit-font-smoothing: antialiased;	
+ }*::focus{
+		outline:0 none;
+		}
+ul, ol{
+	margin:0;
+	padding:0;
+	}
+li{
+	list-style:none;
+	}	
+li a, a:hover{
+	text-decoration:none;
+	}
+	
+img{
+	max-width:100%;
+	}
+textarea {
+	resize:none;
+	}		
+a:focus, a:hover{
+text-decoration:none;
+outline:0 none;
+	}		
+ .btn:focus, a::focus{
+	 outline:0 none;
+	 }
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus {
+  outline:0 none;
+  outline-offset: -2px;
+}	
+
+.log-in-page {
+  left: 0;
+  margin: -100px auto 0;
+  max-width: 95%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 40%;
+  width: 450px;
+}
+.log-in-page .admin-logo {
+  display: inline-block;
+  margin: 0 0 30px;
+}
+.log-in-form .form-control {
+  border:1px solid #fff;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  
+  color:#58595b;
+  font-family: 'MyriadPro-Cond';
+  font-size:25px;
+  height: auto;
+  margin: 0 0 12px;
+  padding: 10px 12px;
+  text-transform: uppercase;
+}
+.log-in-form .form-control::-webkit-input-placeholder {
+   color:#58595b;
+}
+
+.log-in-form .form-control:-moz-placeholder { /* Firefox 18- */
+  color:#58595b; 
+}
+
+.log-in-form .form-control::-moz-placeholder {  /* Firefox 19+ */
+  color:#58595b; 
+}
+
+.log-in-form .form-control:-ms-input-placeholder {  
+  color:#58595b; 
+}
+.log-in-form .btn.btn-default {
+  background-color: #ed1c24;
+  border:1px solid #ed1c24;
+  border-radius: 0;
+  color: #fff;
+  display: block;
+  font-family: "MyriadPro-CondIt";
+  font-size: 25px;
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+.log-in-form .btn.btn-default:hover {
+  background-color:#dc0008;	
+ }
+
+.log-in-form .reset-password {
+   color:#535352;	
+  display: inline-block;
+  font-family: "MyriadPro-CondIt";
+  font-size:25px;
+  margin-top: 14px;
+}
+span.error-message {
+  color: #ed1c24;
+  display: block;
+  font-family: "MyriadPro-CondIt";
+  font-size: 25px;
+  line-height: 20px;
+  text-align: left;
+}
+.menu-overlay {
+  background-color:rgba(202, 186, 181, 0.97);
+  bottom: 0;
+  display:none;
+  left: 0;
+  padding: 20px;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  z-index:888;
+}
+.btn-close {
+  padding: 30px 0;
+  text-align: right;
+}
+.menu-overlay ul li a {
+  color: #fff;
+  display: block;
+  font-family: "MyriadPro-Cond";
+  font-size: 54px;
+  height: 82px;
+  line-height: 62px;
+  padding: 12px 0;
+}
+.menu-overlay ul li:hover a{
+  background:#ed1c24;	
+ }
+
+
+.btn-close button {
+  background:none;  
+  border: 0 none;
+  padding: 0;
+} 
+.container.fixed {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 60px;
+  z-index: 22;
+}
+.btn-trigger {
+  background-color:transparent;
+  border: 0 none;
+  border-radius:0;
+  float: right;
+  height: 25px;
+  padding: 0;
+  text-align: center;
+  width:30px;  
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+}
+
+.navigation.sticky {
+  background:#cabab5;
+  padding: 8px 0;
+  
+  box-shadow:0 2px 2px #999;
+  -webkit-box-shadow:0 2px 2px #999;
+  -moz-box-shadow:0 2px 2px #999;
+}
+.navigation.sticky .logo {
+  width: 95px;
+}
+.navigation.sticky .btn-trigger {
+  margin-top: 3px;
+}
+
+.container.fixed .btn-trigger.sticky {
+  background-color: #cabab5;
+  border-radius: 100%;
+  height: 50px;
+  padding-top: 4px;
+  width: 50px;
+}
+.btn-trigger:focus{
+  outline:0 none;	
+ } 
+ .container.fixed .btn-trigger.sticky .icon-bar{
+  background:#fff;	
+ }
+.btn-trigger .icon-bar {
+  background: #fff;
+  border-radius: 0;
+  display: block;
+  height: 4px;
+  margin: 5px auto;
+  width: 28px;
+}
+.btn-trigger .icon-bar:first-child {
+  margin-top: 0;
+}
+
+.admin-nav::after, .admin-nav::before{
+  clear: both;
+  content: "";
+  display: table;
+} 
+
+.admin-nav {
+  padding: 50px 0 20px;
+}
+
+.logo {
+  float: left;
+  position:relative;
+  z-index:22;
+ }
+.admin-triger span.icon-bar{
+  background-color:#cabab5;
+ }
+
+.admin-home::after, .admin-home::before {
+  clear: both;
+  content: "";
+  display: table;
+}
+.admin-home{
+ padding:20px 0;  
+}
+.admin-home h2 {
+  color: #535352;
+  font-family: "MyriadPro-Cond";
+  font-size: 68px;
+  margin: 10px 0 50px;
+  text-align: center;
+}
+.banner-graphics::after, .banner-graphics::before {
+  clear: both;
+  content: "";
+  display: table;
+}
+.banner-graphics {
+  clear: both;
+  display: block;
+  margin: 0 0 20px;
+}
+.banner-graphics h4 {
+  color:#535352;
+  font-family: 'MyriadPro-BoldCond';
+  font-size:25px;	
+  margin: 0;
+  text-transform:uppercase;
+}
+.banner-graphics p {
+  color:#535352;
+  font-family: "MyriadPro-Cond";
+  font-size:25px;	
+ }
+.banner-text {
+  display: block;
+  margin: 20px 0 5px;
+}
+.banner-text h4{
+  display: block;
+  margin: 20px 0 0;
+} 
+.banner-text textarea.form-control {
+  height: 140px;
+  margin-top: 10px;
+}
+.banner-graphics textarea.form-control {
+  height: 140px;
+} 
+.btn.btn-danger.btn-submit:hover{
+ background-color:#d51017;	
+ } 
+ 
+/*********************************
+  Custom Input File
+  ***********************/
+  
+.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+  cursor: pointer;
+  display: inline-block;
+  font-family: "MyriadPro-CondIt";
+  font-size: 28px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 3px 1.25rem 8px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+
+/* style 1 */
+
+.inputfile-1 + label {
+    color: #fff;
+    background-color: #cabab5;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+    background-color: #b79f97;
+}
+
+.box .inputfile {
+  display: none;
+}
+
+.banner-graphics .form-control {
+  border: 1px solid #fff;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  
+  color:#58595b;
+  font-family: 'MyriadPro-Cond';
+  font-size: 28px;
+  height: auto;
+  margin: 12px 0 0;
+  padding:7px 15px 10px;
+} 
+.banner-graphics .form-control::-webkit-input-placeholder {
+   color: #535352;
+}
+
+.banner-graphics .form-control:-moz-placeholder { /* Firefox 18- */
+   color: #535352;  
+}
+
+.banner-graphics .form-control::-moz-placeholder {  /* Firefox 19+ */
+   color: #535352; 
+}
+
+.banner-graphics .form-control:-ms-input-placeholder {  
+   color: #535352;
+}
+.admin-home {
+  display: block;
+  padding: 10px 0 60px;
+}
+.btn.btn-danger.btn-submit {
+  background-color: #ed1c24;
+  border: 1px solid #ed1c24;
+  border-radius: 0;
+  font-family: "MyriadPro-CondIt";
+  font-size: 30px;
+  font-weight: normal;
+  padding: 5px 0 10px;
+  width: 100%;
+}
+
+.btn.btn-default.btn-cancl {
+  background-color: transparent;
+  border: 0 none;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  color:#535352;
+   font-family: "MyriadPro-CondIt";
+   font-size:30px;
+   font-weight:normal;
+  margin: 30px 0;
+  padding: 0;
+}
+.btn.btn-default.btn-cancl:hover {
+  color:#aeaeae;
+}
+.admin-home hr {
+  border-top: 3px solid #cabab5;
+  clear: both;
+  display: inline-block;
+  margin: 25px 0 40px;
+  width: 100%;
+}
+.btn.btn-danger.btn-save {
+  background-color:#cabab5;
+  border:1px solid #cabab5;	
+  border-radius: 0;
+  font-family:'MyriadPro-CondIt';
+  font-size:30px;
+  margin: 20px 0;
+  padding:5px 0 10px;
+  width: 100%;
+}
+.btn.btn-danger.btn-save:hover{
+  background-color:#aa928b;	
+ }
+ 
+.col-xs-12.upload-section .banner-graphics {
+  padding-right: 15px;
+  width: 50%;
+} 
+.project-images-box {
+  display: block;
+  height: 178px;
+  overflow: hidden;
+  position: relative;
+}
+.step-increse {
+  color: #58595b;
+  counter-increment: mega-step;
+  font-family: "MyriadPro-Cond";
+  font-size: 20px;
+  margin-top: 15px;
+}
+.step-increse::before {
+  background: #fff none repeat scroll 0 0;
+  content: counter(mega-step, numeric);
+  height: 40px;
+  left: 8px;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 40px;
+  z-index: 2;
+}
+.project-cross-btn {
+  color: #fff;
+  font-size: 18px;
+  height: 28px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top:50px;
+  width: 40px;
+}
+
+.project-cross-btn::before{
+  content:'b';
+  font-family:"vector-icon";	
+ }
+ 
+.project-cross-btn:hover, .project-cross-btn:focus{
+  color:#cabab5;
+ } 
+.upload-section {
+  margin: 0 0 20px;
+}
+
+.row.mk00 {
+  margin: 25px -8px 0;
+}
+.upload-section .row.mk00 .step-increse {
+  padding: 0 8px;
+}
+.project-images-box img {
+  width: auto;
+}
+
+ 
+/******************************************
+  MEDIA QUERY START
+ ********************************/
+
+
+@media(min-width:1400px){
+
+.container{
+  width:1260px;	 
+ }	
+ 
+
+.log-in-page {
+   width: 580px;	
+  }
+  
+.log-in-form .form-control,
+.log-in-form .btn.btn-default,
+.log-in-form .reset-password,
+span.error-message {
+  font-size:30px;	
+ } 
+ 
+ .menu-overlay ul li a{
+	  font-size:78px; 
+} 
+.btn-form-close {
+    float: right;
+    padding: 36px 0 0;
+}
+.menu-overlay ul li a {
+  height: 110px;
+  line-height: 65px;
+  padding: 25px 0;
+}
+.admin-home h2{
+   font-size:78px;	
+ }
+.banner-graphics h4{
+  font-size:28px;	
+ } 
+.btn.btn-danger.btn-submit {
+  font-size:30px;	
+ } 
+
+	
+} 
