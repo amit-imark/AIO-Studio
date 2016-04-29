@@ -19,7 +19,7 @@
   font-family: 'MyriadPro-CondIt';
   src: url('../fonts/Myriod/MyriadPro-CondIt/MyriadPro-CondIt.eot?#iefix') format('embedded-opentype'),  url('../fonts/Myriod/MyriadPro-CondIt/MyriadPro-CondIt.otf')  format('opentype'),
 	     url('../fonts/Myriod/MyriadPro-CondIt/MyriadPro-CondIt.woff') format('woff'), url('../fonts/Myriod/MyriadPro-CondIt/MyriadPro-CondIt.ttf')  format('truetype'), url('../fonts/Myriod/MyriadPro-CondIt/MyriadPro-CondIt.svg#MyriadPro-CondIt') format('svg');
-  font-weight: normal;
+  font-weight:normal;
   font-style: normal;
 }
 
@@ -484,20 +484,24 @@ outline:0 none;
 .every-project .row {
   margin: 50px -8px 0;
 }
-
+ 
 .btn.btn-default.btn-more-porject {
   background: none;
   border:3px solid #fff;
   border-radius: 100%;
   color: #fff;
   font-family: "MyriadPro-CondIt" ;
-  font-weight:normal;
   font-size:30px;
   height: 120px;
   line-height:25px;
   margin:155px 0 0;
   padding: 30px 4px;
   text-align: center;
+  text-shadow:none;
+  -webkit-text-shadow:none; 
+  
+  -webkit-font-smoothing: antialiased;
+  
   width: 120px;
 
 }
@@ -781,7 +785,7 @@ outline:0 none;
 .social-icons ul li.email-icon a::before {
   content: "a";
   font-family: "vector-icon";
-  line-height: 62px;
+  line-height: 52px;
 }
 .social-icons ul li.printest a::before {
   content: "";
@@ -1164,11 +1168,11 @@ outline:0 none;
   display: block;
   font-family: "MyriadPro-Cond";
   font-size: 54px;
-  line-height: 58px;
+  height: 82px;
+  line-height: 62px;
   padding: 12px 0;
 }
-
-.menu-overlay ul li.active a{
+.menu-overlay ul li:hover a{
   background:#ed1c24;	
  }
 
@@ -1194,12 +1198,20 @@ outline:0 none;
   color: #fff;
   display: block;
   font-size: 26px;
-  height: 35px;
+  height: 27px;
+  line-height: normal;
+  position: relative;
   width: 35px;
 }
 .social-icon-menu > ul li:hover a {
   background:none;
-  color:#525352;
+  color:#ED1C24;
+}
+.social-icon-menu > ul li a::before {
+  left: 0; 
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .social-icon-menu > ul li.instrgram a::before {
   content: "";
@@ -1389,10 +1401,10 @@ outline:0 none;
     float: right;
     padding: 36px 0 0;
 }
- .menu-overlay ul li a { 
-    line-height: 65px;
-    padding: 25px 0;
-} 
-
+.menu-overlay ul li a {
+  height: 110px;
+  line-height: 65px;
+  padding: 25px 0;
+}
 	
 } 
