@@ -568,6 +568,7 @@ table.table-ordered tr th {
 table.table-ordered tr td.table-order {
   background-color: #cabab5;
   color: #fff;
+  cursor:pointer;
   font-size: 18px;
   text-align: center;
   width: 60px;
@@ -586,7 +587,7 @@ table.table-ordered tr td {
   color: #535352;
   font-family: "MyriadPro-Cond";
   font-size: 25px;
-  padding: 8px 20px;
+  padding: 6px 20px 12px;
   text-align:center;
 }
 table.table-ordered tr th:first-child {
