@@ -460,7 +460,7 @@ span.error-message {
    font-family: "MyriadPro-CondIt";
    font-size:30px;
    font-weight:normal;
-  margin: 30px 0;
+  margin: 22px 0;
   padding: 0;
 }
 .btn.btn-default.btn-cancl:hover {
@@ -549,6 +549,62 @@ span.error-message {
   width: auto;
 }
 
+table.table-ordered {
+  width: 100%;
+}
+
+.table-section hr {
+  margin: 0 0 25px;
+}
+
+table.table-ordered tr th {
+  color: #535352;
+  font-family: "MyriadPro-BoldCond";
+  font-size: 25px;
+  font-weight: normal;
+  padding:0 20px 20px;
+  text-align:center;
+}
+table.table-ordered tr td.table-order {
+  background-color: #cabab5;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  width: 60px;
+}
+
+table.table-ordered tr td.table-order.decend::before {
+  content: "c";
+  font-family:"vector-icon";	
+}
+
+table.table-ordered tr td.table-order.asend::before {
+  content: "d";
+  font-family:"vector-icon";	
+}
+table.table-ordered tr td {
+  color: #535352;
+  font-family: "MyriadPro-Cond";
+  font-size: 25px;
+  padding: 8px 20px;
+  text-align:center;
+}
+table.table-ordered tr th:first-child {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+table.table-ordered tr th:nth-child(2), table.table-ordered tr td:nth-child(2) {
+  padding-left: 70px;
+  text-align: left;
+  width: 52%;
+}
+table.table-ordered tr:nth-child(2n+2) {
+  background-color: #fff;
+}
+.col-xs-12.text-center.mg-top {
+  margin-top: 60px;
+}
  
 /******************************************
   MEDIA QUERY START
@@ -594,6 +650,14 @@ span.error-message {
 .btn.btn-danger.btn-submit {
   font-size:30px;	
  } 
+table.table-ordered tr th{
+ font-size:28px;	
+	
+}
+table.table-ordered tr td{
+  font-size:30px;	
+ }
+
 
 	
 } 
